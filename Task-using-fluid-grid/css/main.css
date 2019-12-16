@@ -6,11 +6,6 @@
     margin: 2%;
     background-color: #EEEEEE;
 }
-.content1 {
-    margin: 2%;
-    background-color: #FFFFFF;
-    padding: 4% 4%;
-}
 .account-head-flex {
     display: flex;
     justify-content: space-between;
@@ -63,6 +58,7 @@
 .search-bar {
     display: flex;
     align-items: center;
+    width: 70%;
     height: 32px;
     border: solid 1px #CCCCCC;
     border-radius: 16px;
@@ -89,3 +85,96 @@
     width: 43%;
     justify-content: space-between;
 }
+/*  SECTIONS  */
+.section {
+	clear: both;
+	padding: 0px;
+	margin: 0px;
+}
+
+/*  COLUMN SETUP  */
+.col {
+	display: block;
+	float:left;
+	margin: 1% 0 1% 85%;
+}
+.col:first-child { margin-left: 0; }
+
+/*  GROUPING  */
+.group:before,
+.group:after { content:""; display:table; }
+.group:after { clear:both;}
+.group { zoom:1; /* For IE 6/7 */ }
+
+.span_2_of_2 {
+	width: 100%;
+}
+.span_1_of_2 {
+	width: 7.5%;
+}
+
+/*  GO FULL WIDTH AT LESS THAN 480 PIXELS */
+
+@media only screen and (max-width: 480px) {
+	.col { 
+		margin: 1% 0 1% 0%;
+	}
+}
+
+@media only screen and (max-width: 480px) {
+	.span_2_of_2, .span_1_of_2 { width: 100%; }
+}
+
+/*  SECTIONS  */
+.section1 {
+	clear: both;
+	padding: 0px;
+	margin: 0px;
+}
+
+/*  COLUMN SETUP  */
+.col1 {
+	display: block;
+	float:left;
+	margin: 1% 0 1% 25%;
+}
+.col1:first-child { margin-left: 0; }
+
+/*  GROUPING  */
+.group1:before,
+.group1:after { content:""; display:table; }
+.group1:after { clear:both;}
+.group1 { zoom:1; /* For IE 6/7 */ }
+
+/*  GRID OF THREE  */
+.span_3_of_31 { width: 100%; }
+.span_2_of_31 { width: 58.33%; }
+.span_1_of_31 { width: 16.66%; }
+
+/*  GO FULL WIDTH BELOW 480 PIXELS */
+@media only screen and (max-width: 480px) {
+	.col1 {  margin: 1% 0 1% 0%; }
+	.span_3_of_31, .span_2_of_31, .span_1_of_31 { width: 100%; }
+}
+
+/*  SECTIONS  */
+.section2 {
+	clear: both;
+	padding: 0px;
+	margin: 0px;
+}
+
+/*  COLUMN SETUP  */
+.col2 {
+	display: block;
+	float:left;
+	margin: 1% 0 1% 80%;
+}
+.col2:first-child { margin-left: 0; }
+
+/*  GROUPING  */
+.group2:before,
+.group2:after { content:""; display:table; }
+.group2:after { clear:both;}
+.group2 { zoom:1; /* For IE 6/7 */ }
+
